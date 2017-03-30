@@ -37,3 +37,28 @@ getch();
 }
 
 
+/*   chamar struct dentrou de outra struct:
+
+struct telefone{
+	int ddd;
+	int numero;
+	};
+struct pessoa{
+	char nome[50];
+	telefone foneDDD;
+	}
+	
+	main(){
+		pessoa p[2];
+		int cont;
+		for(cont = 0; cont <2; cont ++){
+			printf("\nNome: );
+			gets(p[cont].nome);
+			fflush(stdin);
+			printf("\n DDD");
+			scanf("%d", &p.foneDDD.ddd);
+			printf("\n Fone: ");
+			scanf("%d", &p.foneDDD.telefone);
+		}
+	}
+	*/
