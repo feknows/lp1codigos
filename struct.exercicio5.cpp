@@ -45,7 +45,7 @@ main(){
 			}
 		
 		}
-		printf("\n Maior nota: %.2f ", maior)
+		printf("\n Maior nota: %.2f ", maior);
 	
 	}
 	
