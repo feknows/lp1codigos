@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*crie uma estrutura representando os alunos do curso de introdução a programação de computadores. 
-A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova 
+/*crie uma estrutura representando os alunos do curso de introduÃ§Ã£o a programaÃ§Ã£o de computadores. 
+A estrutura deve conter a matrÃ­cula do aluno, nome, nota da primeira prova, nota da segunda prova 
 e nota da terceira prova
 
 a. usuario entra com dados de 5 alunos
@@ -18,7 +18,7 @@ struct aluno {
 main(){
 	aluno al[2];
 	int cont;
-	float maior;
+	float maior=0;
 	
 	for(cont=0; cont<2; cont++){
 		printf("\nNome do Aluno: ");
@@ -39,8 +39,13 @@ main(){
 		if(al[cont].np1 > al[cont].np1){
 			printf("%s - nota: %f", al[cont].nome, al[cont].np1);
 		}
+		for(cont=0; cont<2; cont++){
+			if(maior < al[cont].np1){
+				maior = al[cont].np1;	
+			}
+		
+		}
+	
 	}
-	
-	
 	
 }
