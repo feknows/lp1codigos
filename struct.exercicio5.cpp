@@ -18,7 +18,7 @@ struct aluno {
 main(){
 	aluno al[2];
 	int cont;
-	float maior=0;
+	float maior=0, menor=0;
 	
 	for(cont=0; cont<2; cont++){
 		printf("\nNome do Aluno: ");
@@ -42,6 +42,8 @@ main(){
 		for(cont=0; cont<2; cont++){
 			if(maior < al[cont].np1){
 				maior = al[cont].np1;	
+			}else if{
+				menor = al[cont].np1;
 			}
 		
 		}
