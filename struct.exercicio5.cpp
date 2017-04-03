@@ -19,7 +19,7 @@ main(){
 	aluno al[2];
 	int cont;
 	float maior=0, menor=0;
-	
+	float soma = 0;
 	for(cont=0; cont<2; cont++){
 		printf("\nNome do Aluno: ");
 		gets(al[cont].nome);
@@ -34,21 +34,23 @@ main(){
 		scanf("%f", &al[cont].np3);
 		fflush(stdin);
 	}
-	for(cont=0; cont<2; cont++){
-		
-		if(al[cont].np1 > al[cont].np1){
-			printf("%s - nota: %f", al[cont].nome, al[cont].np1);
+		for(cont=0; cont<2; cont++){
+			if(al[cont].np1 > al[cont].np1){
+				printf("%s - nota: %f", al[cont].nome, al[cont].np1);
+			}
 		}
+		
 		for(cont=0; cont<2; cont++){
 			if(maior < al[cont].np1){
 				maior = al[cont].np1;	
-			}else if{
-				menor = al[cont].np1;
 			}
-		
 		}
+	
 		printf("\n Maior nota: %.2f ", maior);
 	
-	}
 	
+	for(cont=0; cont<2; cont++){
+		soma = soma + (al[cont].np1 + al[cont].np3 + al[cont].np3);
+	}
+	printf("Media das notas: %.2f", soma / 3);
 }
