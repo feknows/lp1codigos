@@ -22,11 +22,11 @@ pessoa p;
 		printf("Nome: ");
 		gets(p.nome);
 		printf("\nDia do nascimento: ");
-		scanf("%d", &p.dataNascimento.dia);
+		scanf("%d", &p[cont].dataNascimento.dia);
 		printf("\nMes do nascimento: ");
-		scanf("%d", &p.dataNascimento.mes);
+		scanf("%d", &p[cont].dataNascimento.mes);
 		printf("\nAno do nascimento: ");
-		scanf("%d", &p.dataNascimento.ano);
+		scanf("%d", &p[cont].dataNascimento.ano);
 	}
 	for(cont=0; cont<10; cont++){
 printf("\n %s - %d/%d/%d", p.nome, p.dataNascimento.dia, p.dataNascimento.mes, p.dataNascimento.ano);
