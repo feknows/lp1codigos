@@ -17,14 +17,18 @@ struct pessoa{
 main(){
 	
 pessoa p;
-printf("Nome: ");
-gets(p.nome);
-printf("\nDia do nascimento: ");
-scanf("%d", &p.dataNascimento.dia);
-printf("\nMes do nascimento: ");
-scanf("%d", &p.dataNascimento.mes);
-printf("\nAno do nascimento: ");
-scanf("%d", &p.dataNascimento.ano);
-
+	int cont;
+	for(cont=0; cont <10; cont++){
+		printf("Nome: ");
+		gets(p.nome);
+		printf("\nDia do nascimento: ");
+		scanf("%d", &p.dataNascimento.dia);
+		printf("\nMes do nascimento: ");
+		scanf("%d", &p.dataNascimento.mes);
+		printf("\nAno do nascimento: ");
+		scanf("%d", &p.dataNascimento.ano);
+	}
+	for(cont=0; cont<10; cont++){
 printf("\n %s - %d/%d/%d", p.nome, p.dataNascimento.dia, p.dataNascimento.mes, p.dataNascimento.ano);
+}
 }
