@@ -4,8 +4,9 @@
 A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova 
 e nota da terceira prova
 
-a. usuario entra com dados de 5 alunos
-b. encontre o aluno com a maior nota da primeira prova
+a) Permita ao usuário entrar com os dados de 5 alunos.
+b) Encontre o aluno com maior nota da primeira prova.
+c) Encontre o aluno com maior media geral.
 */
 
 struct aluno {
@@ -18,7 +19,7 @@ struct aluno {
 main(){
 	aluno al[2];
 	int cont;
-	float maior=0, menor=0;
+	float maior=0;
 	float soma = 0;
 	for(cont=0; cont<2; cont++){
 		printf("\nNome do Aluno: ");
