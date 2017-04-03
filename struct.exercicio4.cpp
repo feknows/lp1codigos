@@ -16,7 +16,7 @@ struct pessoa{
 
 main(){
 	
-pessoa p;
+pessoa p[10];
 	int cont;
 	for(cont=0; cont <10; cont++){
 		printf("Nome: ");
