@@ -9,6 +9,7 @@ struct data{
 
 struct pessoa{
 	char nome[50];
+	float altura;
 	data dataNascimento;
 };
 
