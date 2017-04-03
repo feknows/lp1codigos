@@ -20,7 +20,7 @@ pessoa p;
 	int cont;
 	for(cont=0; cont <10; cont++){
 		printf("Nome: ");
-		gets(p.nome);
+		gets(p[cont].nome);
 		printf("\nDia do nascimento: ");
 		scanf("%d", &p[cont].dataNascimento.dia);
 		printf("\nMes do nascimento: ");
