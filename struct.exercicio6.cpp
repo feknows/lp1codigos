@@ -31,7 +31,7 @@ struct telefone{
   int numero;
 };
 
-struct dataAniversario{
+struct data{
   int dia;
   int mes;
   int ano;
@@ -45,5 +45,24 @@ struct pessoa{
   int codigo;
   char nome[50];
   char email[50];
+  telefone tel;
+  data dataAniversario;
+  endereco end;
+  obs obsrv;
 };
 
+main(){
+  pessoa p[100];
+  int cont;
+  for(cont=0; cont<100; cont++){
+      fflush(stdin);
+      printf("\nCodigo: ");
+      scanf("%d", &p[cont].codigo);
+      
+  }
+  
+  
+  
+  
+  
+}
